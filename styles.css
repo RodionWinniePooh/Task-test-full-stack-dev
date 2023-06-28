@@ -1,0 +1,89 @@
+@media (max-width: 575px) {
+    svg {
+        max-width: 40px !important;
+    }
+}
+
+@media (max-width: 960px) {
+    .disappearance{
+        display: none;
+    }
+    svg {
+        max-width: 80px !important;
+    }
+}
+
+@media (max-width: 1050px) {
+    .disappearance{
+        display: none;
+    }
+}
+
+svg{
+    height: 60px;
+}
+.disappearance{
+    opacity: 0.2;
+}
+
+.cookie{
+	width: 420px;
+    height: 72px;
+    background-color: #fff;
+    position: fixed;
+    bottom: 88px;
+    border-radius: 10px;
+	right: 5%;
+	padding: 10px 20px;
+    border-style: dotted;
+}
+
+.cookie .txt{
+	float: right;
+    width: 65%;
+
+}
+.txt p{
+	color:#1D2D35;
+}
+
+.cookie .accept {
+    background-color: #40CC79;
+    color: #fff !important;
+    border-radius: 32px;
+    padding: 3px 23px 3px;
+    /* align-self: center; */
+    font-size: 19px;
+    margin-top: 2.5%;	
+    margin-right: 3%;
+
+}
+
+.cookie .close {
+    background-color: #cc406f;
+    color: #fff !important;
+    border-radius: 32px;
+    padding: 3px 23px 3px;
+    /* align-self: center; */
+    font-size: 19px;
+    margin-top: 2.5%;	
+    margin-right: 3%;
+
+}
+.cookie .accept:hover {
+	background-color: #30b867;
+}
+
+.modal{
+    width:0% !important; 
+    height:0% !important;
+}
+
+.modal-dialog{
+    top: auto !important;
+    position: fixed !important;
+    left: auto !important;
+    bottom: 0 !important;
+    right: 0 !important;
+    padding: 20px 20px 20px 20px !important;
+}
