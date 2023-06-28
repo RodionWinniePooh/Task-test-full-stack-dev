@@ -1,58 +1,90 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <!-- Кодировка веб-страницы -->
+    <meta charset="utf-8">
+    <!-- Настройка viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task test</title>
+
+    <!-- Bootstrap CSS (jsDelivr CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- Bootstrap Bundle JS (jsDelivr CDN) -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    <style>
+        svg{
+            padding: 20% 0 20% 0;
+        }
+    </style>
+
+</head>
+<body>
+
+<!--
+@include media-breakpoint-up(xs) { ... }
+@include media-breakpoint-up(sm) { ... }
+@include media-breakpoint-up(md) { ... }
+@include media-breakpoint-up(lg) { ... }
+@include media-breakpoint-up(xl) { ... } -->
+
 <div class="container border rounded-3 p-4 mt-4 shadow-sm p-3 mb-5 bg-white">
     <div class="row">
-        <div class="col-3">
-            <!-- Column 1 -->
+        <div class="col-6">
             <div class="row">
-                <div class="col">
-                    <h2>Dlaczego</h2>
-                    <!-- <p>Первый ряд 1:1</p> -->
+
+                <h2>Dlaczego</h2>
+                <!-- <p>Первый ряд 1:1</p> -->
+
+            </div>
+
+            <!-- <p>Первый ряд 1:1</p> -->
+            <div class="row">
+                <div class="col-6">
+                    <!-- Column 1 -->
+                    <div class="row">
+                        <h3>Koszty</h3>
+                        <p>Zamieniasz koszty state logistyki na koszty zmienne.</p>
+                    </div>
+                    <div class="row">
+
+                        <h3>Oszczednosc czasu</h3>
+                        <p>Zajmujesz sie tym, co lubisz - eCommercem, a nie logistyka.</p>
+
+                    </div>
+                    <div class="row">
+
+                        <h3>Opakowania</h3>
+                        <p>Wyzwania pakowania znamy od podszewki - scisle wspotpracujemy z producentem opakowan.</p>
+
+                    </div>
+                </div>
+                <div class="col-6">
+                    <!-- Column 2 -->
+
+                    <div class="row">
+
+                        <h3>Black Friday?</h3>
+                        <p>Czekasz na niego z niecierpliwoscia, a nie z obawa.</p>
+
+                    </div>
+                    <div class="row">
+
+                        <h3>Spokoj ducha</h3>
+                        <p>Row 3</p>
+
+                    </div>
+                    <div class="row">
+
+                        <h3>Co dajemy dodatkowo?</h3>
+                        <p>Wraz z nasza usluga otrzymujesz bezplatny konsulting w zakresie eCommerce.</p>
+
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col">
-                    <h3>Koszty</h3>
-                    <p>Zamieniasz koszty state logistyki na koszty zmienne.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <h3>Oszczednosc czasu</h3>
-                    <p>Zajmujesz sie tym, co lubisz - eCommercem, a nie logistyka.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <h3>Opakowania</h3>
-                    <p>Wyzwania pakowania znamy od podszewki - scisle wspotpracujemy z producentem opakowan.</p>
-                </div>
-            </div>
+
         </div>
-        <div class="col-3">
-            <!-- Column 2 -->
-            <div class="row">
-                <div class="col">
-                    <h3>Column 2</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <h3>Black Friday?</h3>
-                    <p>Czekasz na niego z niecierpliwoscia, a nie z obawa.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <h3>Spokoj ducha</h3>
-                    <p>Row 3</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <h3>Co dajemy dodatkowo?</h3>
-                    <p>Wraz z nasza usluga otrzymujesz bezplatny konsulting w zakresie eCommerce.</p>
-                </div>
-            </div>
-        </div>
+
         <div class="col-6">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 1500 357.1" style="enable-background:new 0 0 1500 357.1;" xml:space="preserve">
                 <g>
@@ -68,3 +100,28 @@
         </div>
     </div>
 </div>
+
+
+
+<!-- <div class="row">
+  <div class="col-md-8">
+    <div class="pb-3">
+      .col-md-8
+    </div>
+    <div class="row">
+      <div class="col-md-6">.col-md-6</div>
+      <div class="col-md-6">.col-md-6</div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">.col-md-6</div>
+      <div class="col-md-6">.col-md-6</div>
+    </div>
+  </div>
+  <div class="col-md-4">.col-md-4</div>
+</div> -->
+
+
+
+
+</body>
+</html>
