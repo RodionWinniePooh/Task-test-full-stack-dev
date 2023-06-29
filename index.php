@@ -11,19 +11,25 @@
   <!-- Bootstrap CSS (jsDelivr CDN) -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   
+<?php
+    function displayCountry() {
+        if (isset($_GET["country"])) {
+            $country = urldecode($_GET["country"]);
+            if (!empty($country)) {
+                echo $country;
+            }
+        }
+    }
 
-
-
+    function displayNoMatchesFound() {
+        if (isset($_GET["matched"]) && $_GET["matched"] === '') {
+            echo "no matches found";
+        }
+    }
+?>
 
 </head>
 <body>
-
-<!-- 
-@include media-breakpoint-up(xs) { ... }
-@include media-breakpoint-up(sm) { ... }
-@include media-breakpoint-up(col-md-6) { ... }
-@include media-breakpoint-up(col-lg-6) { ... }
-@include media-breakpoint-up(xl) { ... } -->
 
 <div class="container border rounded-3 p-4 mt-4 shadow-sm p-3 mb-5 bg-white">
     <div class="row">
@@ -64,7 +70,6 @@
 
         </div>
 
-
         <div class="col-md-12 align-self-sm-start col-lg-6 align-self-sm-start order-lg-1">
             <div class="row">
                 <div class="col-6">
@@ -101,6 +106,24 @@
     </div>
 </div>
 
+<div class="container border rounded-3 p-4 mt-4 shadow-sm p-3 mb-5 bg-white">
+    <form action="countrySearch.php" method="post">
+        <div class="form-group">
+            <label for="exampleInputPhone">Phone number</label>
+            <input name="phone" type="text" class="form-control" id="exampleInputPhone" placeholder="Enter phone number">
+        </div>
+        <div class="form-group">
+            <label>Country:</label>
+            <label>
+                <?php
+                    displayCountry();
+                    displayNoMatchesFound();
+                ?>
+            </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Get to know the Country</button>
+    </form>
+</div>
 
 <div class="modal" id="popupModal" tabindex="-1" role="dialog" aria-labelledby="popupModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -119,15 +142,11 @@
     </div>
 </div>
 
-
-
-
 <!-- Подключение скриптов jQuery и Bootstrap -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 <script src="script.js"></script>
-
 
 </body>
 </html>
